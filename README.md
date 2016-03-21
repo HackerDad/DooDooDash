@@ -13,10 +13,16 @@ Instructions
 + Create a [Google Voice account](https://www.google.com/voice)
 + Enable Less Secure Apps for your [Google Account](https://www.google.com/settings/security/lesssecureapps)
 + Startup your Raspberry Pi, connect it to your network
-+ On your Raspberry Pi, install Scapy
++ On your Raspberry Pi, install Scapy and tcpdump
 
   ```
-  sudo apt-get install
+  mkdir temp
+  cd /temp
+  wget http://scapy.net/scapy-2.3.1.zip
+  unzip scapy-2.3.1.zip
+  cd scapy-2.3.1
+  sudo python setup.py install
+  sudo apt-get install tcpdump
   ```
 + Download this repo to your Raspverry Pi
 
@@ -35,6 +41,6 @@ Instructions
 + Run the program
 
   ```
-  sudo python DooDooDash.py
+  sudo python dash.py
   ```
 + Dash away!
