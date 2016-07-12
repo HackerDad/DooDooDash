@@ -17,7 +17,7 @@ Instructions
 
   ```
   mkdir temp
-  cd /temp
+  cd temp
   wget http://scapy.net/scapy-2.3.1.zip
   unzip scapy-2.3.1.zip
   cd scapy-2.3.1
