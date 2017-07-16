@@ -28,4 +28,5 @@ def arp_display(pkt):
 				sms_gvoice(google_account, google_password, sms_number, sms_message)
 	return;
 
-print sniff(prn=arp_display, iface="wlan0",filter="arp",store=0)
+print "DooDooDash started!"
+print sniff(prn=arp_display, filter="arp", store=0)
